@@ -1,0 +1,68 @@
+// * This styles are linked in index.scss which is linked in app.jsx and working already.
+@import './media.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: url('./../assets/cursor.png') 39 39, auto;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: $c-violet-dark;
+  font-family: $ff-main;
+  overflow-x: hidden;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: 700px) {
+    padding: 0 20px;
+  }
+}
+
+// --------Custom Scrollbar----------------
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 8px;
+  opacity: 0.7;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $c-violet;
+  border-radius: 10px;
+  outline: none;
+}

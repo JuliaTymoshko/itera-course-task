@@ -1,0 +1,35 @@
+.welcome-page {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.form-wrapper {
+  background-color: $c-white;
+  padding: 33px 40px;
+  max-width: 540px;
+  border-radius: 4px;
+
+  @media (max-width: 700px) {
+    padding: 20px 25px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.form-greeting {
+  margin-bottom: 20px;
+}

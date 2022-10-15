@@ -1,0 +1,49 @@
+.input-custom {
+  height: 54px;
+  width: 100%;
+  padding: 18px 15px;
+  font-size: $fs-h4;
+  background-color: $c-violet-light;
+
+  &::placeholder {
+    color: $c-grey;
+  }
+
+  &:focus {
+    border: 1px solid $c-violet;
+  }
+}
+
+.button-custom {
+  height: 54px;
+  width: 100%;
+  padding: 18px 15px;
+  font-size: $fs-h4;
+  color: $c-white;
+  font-weight: 400;
+  background-color: $c-violet;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::placeholder {
+    color: $c-grey;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    color: $c-violet-dark;
+    cursor: default;
+  }
+}
+
+.button-custom-error {
+  border: 1px solid red;
+  background-color: rgb(255, 238, 238);
+}

@@ -1,0 +1,26 @@
+.swiper {
+  max-width: 300px;
+  height: auto;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $c-violet-light;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  &::after {
+    color: $c-violet-light;
+  }
+}
